@@ -1,0 +1,509 @@
+.player:hover .picture-box {
+    transform: scale(1.05);
+    }
+    
+    .player:hover .play-box {
+    opacity: 1;
+    border:2px solid #fff;	
+    }
+    
+    .player:hover .play-box svg {
+    opacity: 1;
+    }
+    .play-box svg {
+    opacity: 0;
+    }
+    .player-box {
+        position: static;
+    }
+    
+    .player {
+        width: 100%;
+        height: 115px;
+        position: relative;
+        z-index: 0;
+    }
+    
+    
+    
+    .picture-box {
+        background-color:#fff;
+        height: 115px; 
+        border-radius: 5px; 
+        position:absolute;
+        z-index: 99;
+        left: 15px;
+        transition: 0.5s;
+    }
+    
+    .mainpicture {
+        border-radius: 5px;
+        object-fit:cover;
+    }
+    
+    .play-box {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:50px;
+        height:50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        border:2px solid #fff0;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    
+    .play-img {
+        filter: invert(1);
+        height: 25px;
+    }
+    
+    .pause-box {
+        display:none;
+        justify-content:center;
+        align-items:center;
+        width:50px;
+        height:50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        border:2px solid #fff; 
+        border-radius: 50%;
+    }
+    
+    .pause-img {
+        filter: invert(1);
+        height: 25px;
+    }
+    
+    .info-block {
+        display: none;
+        transition: 0.3s linear;
+        box-sizing:border-box;
+        border:1px solid lightgray;
+        width: 0; 
+        height: 100%; 
+        position:absolute;
+        left: 120px;
+        z-index: 3;
+        border-radius: 5px; 
+        background-color:#fff;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    
+    
+    
+    .hide-block {
+        display: none;
+        z-index: 4;
+        width: 40px;
+        height: 84px;
+        position:absolute;
+        background-color:#fff;
+        border:1px solid lightgray;
+        border-radius: 5px; 
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+    
+    .wrapper {
+        border-radius: 5px;
+        width: 100%;
+    }
+    
+    .tittleText{
+        text-overflow: ellipsis;
+        font-weight: bold;
+    }
+    
+    .cross {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .cross .str0 {
+        stroke: #ff8c00;
+    }
+    
+    
+    .titleLine{
+        border-bottom: 1px solid lightgray;
+        padding: 2px 0;
+        display:flex;
+        justify-content: space-between;
+        opacity: 0;
+        transition: .3s;
+    }
+    
+    .titleLine span {
+        color: #ff8c00;
+    }
+    
+    .textarea-wrapper {
+        position: relative;
+        padding-top: 4px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: .3s;
+    }
+    
+    .whiteline{
+        position: absolute;
+        width: calc(100% - 5px); /*Обязательно учесть ширину скролла(def. 5px) */
+        height: 15px;
+        top: 100%;
+        transform: translate(0, -100%);
+        padding-bottom: 2px;
+    }
+    
+    textarea {
+        overflow: auto;
+        resize:none;
+        border: none;
+        background: none;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        color: black;
+    }
+    
+    textarea::-webkit-scrollbar {
+        width: 5px; /* ширина для вертикального скролла (При изменении поменять ширину .whiteline)*/
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    
+    textarea::-moz-scrollbar {
+        width: 5px; /* ширина для вертикального скролла (При изменении поменять ширину .whiteline)*/
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    
+    textarea::-moz-scrollbar-thumb {
+        background-color: #ff8c00;
+        border-radius: 9em;
+    }
+    
+    textarea::-webkit-scrollbar-thumb {
+        background-color: #ff8c00;
+        border-radius: 9em;
+    }
+    
+    
+    
+    textarea:focus{
+        outline: none;
+    }
+    
+    .soc_icon{
+        position: absolute;
+        top: 50%;
+        Transform: translate(0, -50%);
+        opacity: 1;
+    }
+    .menu_cross {
+        position: absolute;
+        top: 50%;
+        Transform: translate(0, -50%);
+        opacity: 0;
+        transition: 0.2s all;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_cross .str0 {
+        stroke: #ff8c00;
+        transition: 0.2s all;
+    }
+    
+    .track-box {
+        box-sizing:border-box;
+        padding-left:145px;
+        border:1px solid lightgray;
+        width: 100%; 
+        height: 86px; 
+        position:absolute;
+        z-index: 3;
+        border-radius: 5px; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:#fff;
+    }
+    
+    .line1 {
+        display: flex;
+        letter-spacing: 1px;
+        justify-content: space-between;
+        padding-bottom: 2px;
+    }
+    
+    .premium {
+        border: 1px solid #ff8c00!important;
+        background-color: #ffe6d7!important;
+    }
+    
+    .option-btn {
+        cursor: pointer;
+        margin-left: 5px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 17px;
+    }
+    
+    .list {
+        position: absolute;
+        z-index: 999999;
+        background-color: #fff;
+        border:1px solid lightgray;
+        border-radius: 5px;
+        top: -138px;
+        left: -148px;
+        padding: 8px 8px 0 8px;
+        width: 160px;
+        opacity:0;
+        display:block;
+        transition: .2s;
+        pointer-events: none;
+    }
+    
+    .list__item {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .list__item a {
+        text-decoration: none;
+        margin-bottom: 8px;
+        max-height: 18px;
+    }
+    
+    .list__item span {
+        font-size: 15px;
+        padding-left:10px;
+        white-space: nowrap;
+        color:#000;
+    }
+    
+    .disablemenu {
+        display: none;
+    }
+    
+    .line1__block1 {
+        display:inline-flex;
+    }
+    
+    .line1__block2 {
+        padding-right: 8px;
+        display:inline-flex;
+        box-sizing:border-box;
+    }
+    
+    .dwnld {
+        box-sizing:border-box;
+        position: relative;
+        z-index: 999;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    
+    .corner2 {
+        opacity: 0;
+        transition: .2s;
+    }
+    
+    .corner {
+        opacity: 0;
+        transition: .2s;
+    }
+    
+    .reg {
+        box-sizing:border-box;
+        background-color: #fff;
+        position: absolute;
+        pointer-events: none;
+        color:black;
+        width: 225px;
+        font-size: 13px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 7px;
+        z-index: 999;
+        display: flex;
+        opacity: 0;
+        transition: .2s;
+        transform: translate(-100%,-55%);
+        right:-200px;
+    }
+    
+    
+    .line2 {
+        padding-bottom:5px;
+        font-size:25px;
+        font-weight: 900;
+        line-height: 1;
+        white-space: nowrap;
+        background: -webkit-linear-gradient(black, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: 0.2s all;
+        opacity: 1;
+    }
+    
+    .line3 {
+        font-size:12px;
+        font-weight: 500;
+        color: grey;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: 0.2s all;
+        opacity: 1;
+    }
+
+    .socialLine {
+        justify-content: left;
+        padding-top:5px;
+        align-items: center;
+        transition: 0.2s all;
+        display: none;
+        opacity: 0;
+    }
+    
+    .cat {
+        color: #F54C17;
+        font-size:12px;
+        font-weight: 900;
+        padding-top: 10px;
+        display: flex;
+    }
+    
+    .count {
+        color:black;
+        font-size:12px;
+        font-weight: 900;
+        display:flex;
+        padding-top: 10px;
+    }
+    
+    .progress-box {
+        border:1px solid lightgray;
+        border-top:none;
+        box-sizing:border-box;
+        padding-left: 145px;
+        padding-right: 10px;
+        display:flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 85px;
+        position:absolute;
+        z-index: 2;
+        border-radius: 5px;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+    }
+    
+    
+      
+    .currentTime {
+        padding-bottom:7px;
+        font-size: 12px
+    }
+    
+     .progressbar {
+        cursor: pointer;
+        transition:0.5s;
+        display: block;
+        width:100%;
+        -webkit-appearance: none!important;
+        height: 25px;
+        background-color: #fff;
+        border:none!important;
+     }
+    
+     .progressbar:focus {
+        outline: none;
+    }
+    
+    .progressline {
+        pointer-events: none;
+        z-index:1;
+        content: "";
+        width: 0;
+        height: 4px;
+        position: absolute;
+        top: 13px;
+        left: 2px;
+        background: linear-gradient(90deg, #FF0000, #EF7F1A);
+        border-radius: 5px;
+    }
+    
+    .emptyline {
+        pointer-events: none;
+        z-index:0;
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        top: 13px;
+        left: 2px;
+        background-color: lightgray;
+        border-radius: 5px;
+    }
+    
+    
+    .progressthumb {
+        position: absolute;
+        pointer-events: none;
+        z-index:2;
+        width: 10px;
+        height: 10px;
+        left:50%;
+        top: 10px;
+        appearance: none;
+        background: red;
+        border-radius: 50%;
+        box-shadow: 0 0 2px rgba(0,0,0, 0.4);
+    }
+    .progressbar::-moz-range-thumb {
+        width: 0;
+        height: 0;
+        appearance: none!important;
+    }
+    
+    
+    .progressbar::-webkit-slider-thumb {
+        width: 0;
+        height: 0;
+        appearance: none !important;
+    }
+    
+    
+    
+    .audioDuration {
+        padding-bottom:7px;
+        font-size: 12px;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
