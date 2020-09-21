@@ -10,3 +10,8 @@
 
 ![image](https://github.com/ajuraI/pleer/blob/master/screenshots/Screenshot_6.png?raw=true)
 ![image](https://github.com/ajuraI/pleer/blob/master/screenshots/Screenshot_7.png?raw=true)
+
+-Функция вызова меню с соц. сетями
+
+![image](https://github.com/ajuraI/pleer/blob/master/screenshots/Screenshot_8.png?raw=true)
+![image](https://github.com/ajuraI/pleer/blob/master/screenshots/Screenshot_9.png?raw=true)
