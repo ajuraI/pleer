@@ -1,6 +1,7 @@
 # pleer
 Самописный плеер на чистом JavaScript
 
+![image](https://github.com/ajuraI/pleer/blob/master/screenshots/Screenshot_10.png?raw=true)
 ![image](https://github.com/ajuraI/pleer/blob/master/screenshots/Screenshot_5.png?raw=true)
 
 
