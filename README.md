@@ -6,4 +6,7 @@
 
 ### Основной функционал
 - Реализован с применением технологии shadowroot
-- 
+- Функция вывода информации о текущем треке
+
+![image](https://github.com/ajuraI/pleer/blob/master/screenshots/Screenshot_6.png?raw=true)
+![image](https://github.com/ajuraI/pleer/blob/master/screenshots/Screenshot_7.png?raw=true)
