@@ -6,7 +6,7 @@
 
 
 ### Основной функционал
-- Реализован с применением технологии Shadow Root
+- Реализован с применением технологии Shadow Dom
 - Функция вывода информации о текущем треке
 
 ![image](https://github.com/ajuraI/pleer/blob/master/screenshots/Screenshot_6.png?raw=true)
